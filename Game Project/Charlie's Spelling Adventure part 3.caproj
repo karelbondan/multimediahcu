@@ -1,0 +1,1538 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Level4</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3rsffkusoha3l</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>2000</width>
+        <height>1500</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Player">
+            <object-type name="Charlie" sid="947632007607604">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="735082124542238">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="609677512245080">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="534319660058192" speed="7">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.796875" y="0.796875" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.140625" y="0.859375" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlueJump.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png" />
+                    </animation>
+                    <animation framecount="3" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="102849513914468" speed="14">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.796875" y="0.796875" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.140625" y="0.859375" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlueJump.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Behaviours" />
+        <object-folder name="Enemy">
+            <object-type name="Sprite11" sid="701313680920457">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Dir" sid="494392429317203" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="310967918889667">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484542196074690" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrown.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.796875" y="0.796875" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.140625" y="0.859375" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite26" sid="623582060094670">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="dr" sid="992139323544376" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="741439151726374">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588670858416881" speed="7">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrown.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.15625" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.875" y="0.5" />
+                                <point x="0.796875" y="0.796875" />
+                                <point x="0.5" y="0.859375" />
+                                <point x="0.140625" y="0.859375" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="0" name="Moving" pingpong="0" repeatcount="1" repeatto="0" sid="591936263179784" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrownJump.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrown.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Misc">
+            <object-type name="Sprite17" sid="922746733112400">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="746500291091572" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="633269469272376">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837544638447001" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite24" sid="443424954099206">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="271553857113259" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="789428311772603">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842505707907236" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite25" sid="614060005437203">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="826950512793477" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="788320193543066">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597414826881911" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite28" sid="811008721507468">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="734947984734250" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Bullet" sid="498599192404710">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312590826209042" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="I" sid="286539491734024">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="L" sid="706116684423612">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="W" sid="455051171264417">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="D" sid="540076115833316">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite31" sid="792077363697046">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="493421138852388" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doghouse.png">
+                            <collision-poly>
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.78125" y="0.21875" />
+                                <point x="0.921875" y="0.5" />
+                                <point x="0.921875" y="0.921875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.109375" y="0.890625" />
+                                <point x="0.109375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite29" sid="700455083239617">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365026352274723" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\pipegrass.png">
+                            <collision-poly>
+                                <point x="0.265625" y="0.265625" />
+                                <point x="0.5" y="0.453125" />
+                                <point x="0.703125" y="0.296875" />
+                                <point x="0.640625" y="0.5" />
+                                <point x="0.875" y="0.875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.875" />
+                                <point x="0.28125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text5" sid="571132835396789">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite32" sid="178369008261968">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897101526156831" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text6" sid="365660339115461">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text8" sid="851867494608591">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text7" sid="203822446218352">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite35" sid="519935635352177">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186985314941488" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text9" sid="405496326127197">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text10" sid="932120567546742">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text13" sid="258223471782902">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text12" sid="133864788468506">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite36" sid="814936173859113">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="562338863970631" type="number" />
+                    <instance-variable name="Angle_set" sid="203601699596180" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645035647318516" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Platform">
+            <object-type name="Sprite10" sid="459088420267778">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194145851845940" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassRoundCornerRight.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.953125" y="0.046875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite13" sid="201083337179967">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747404377197684" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCliffLeftAlt.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.03125" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.703125" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.078125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite14" sid="404385506986627">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="613916023679892" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCenter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite15" sid="800116626797474">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871399220044825" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCliffRight.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.921875" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.703125" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite16" sid="404157841626075">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895737058050490" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCliffRightAlt.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="0.921875" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.703125" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite18" sid="107700050524730">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="935081370967781">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538793265521614" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassBoneCenter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite22" sid="591292995951939">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196751228858913" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCliffLeft.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.96875" y="0.03125" />
+                                <point x="1" y="0.5" />
+                                <point x="0.96875" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite23" sid="274329826485740">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594444399939998" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassHalf.png">
+                            <collision-poly>
+                                <point x="0.0625" y="0.0625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.953125" y="0.046875" />
+                                <point x="0.984375" y="0.5" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.375" y="0.625" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite30" sid="871976239500967">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415503594207591" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grass.png">
+                            <collision-poly>
+                                <point x="0.046875" y="0.046875" />
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite38" sid="926638904260134">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="919006850390746">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599213509955450" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite39" sid="917538872273361">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="324606586487962">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389290848060576" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite41" sid="733365613564045">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="785032590431817">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="366384186167479" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite42" sid="433395374555211">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="520195704388109">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469108496606936" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite43" sid="639205285677176">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="286374305585673">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370735376387085" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Interface">
+            <object-type name="BacktoMainMenu" sid="338596849495714">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302474261057098" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TryAgain" sid="473707624410208">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="885246249631552" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="NextLevel" sid="898681262839734">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321048255924932" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MainMenu" sid="174206152566560">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507222838769455" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PauseButton" sid="291072311851435">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite62" sid="516997721818216">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178098491650673" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Background">
+            <object-type name="TiledBackground3" sid="546610022141266">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\edwar\Downloads\2358.jpg" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Startlevel">
+            <object-type name="StartButton" sid="904579954648645">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Box2" sid="200787796698005">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708004266258721" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="HomeScreen">
+            <object-type name="Background" sid="954991510859908">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944405245211818" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\karel\Desktop\CHARLIE SPRITS\92df38ab69edaddb6665e557c91d00a48cfc9fd1_s2_n1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Credits" sid="215821777833069">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Title" sid="379888188912243">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Sprite45" sid="202521007713821">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491690633930188" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCenter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite46" sid="258216190915669">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385499578707480" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\mudd.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite47" sid="586622576301095">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861489453201963" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlueSit.png">
+                            <collision-poly>
+                                <point x="0.333333" y="0.390625" />
+                                <point x="0.493333" y="0.09375" />
+                                <point x="0.84" y="0.1875" />
+                                <point x="0.8" y="0.5" />
+                                <point x="0.76" y="0.71875" />
+                                <point x="0.493333" y="1" />
+                                <point x="0.106667" y="0.875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite48" sid="611097339757447">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202609453477212" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doghouse.png">
+                            <collision-poly>
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0" />
+                                <point x="0.78125" y="0.21875" />
+                                <point x="0.921875" y="0.5" />
+                                <point x="0.921875" y="0.921875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.109375" y="0.890625" />
+                                <point x="0.109375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite49" sid="257238565410362">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400626798815966" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite50" sid="351961555948192">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585018190819745" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BackButton" sid="314111462132068">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665996903752071" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AboutUs" sid="403412527414238">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="About Us">
+            <object-type name="Back" sid="636686355081920">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="CreditsFolder">
+            <object-type name="Sprite51" sid="506747466972839">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879054428959255" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite59" sid="575506170540453">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="876891523843658" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doggybiscuit.png">
+                            <collision-poly>
+                                <point x="0.453125" y="0.453125" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.5625" y="0.5" />
+                                <point x="0.546875" y="0.546875" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.328125" y="0.671875" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text14" sid="524925620188738">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="CreditsBack" sid="609205261016283">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="PauseScreen">
+            <object-type name="ReturnToGame" sid="257780996570368">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="409147288506758" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite63" sid="501177879098689">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759261762890197" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MainMenuPause" sid="887906245201234">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389850939575747" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.02407" />
+                                <point x="0.986667" y="0.498906" />
+                                <point x="0.791667" y="0.726477" />
+                                <point x="0.5" y="0.995624" />
+                                <point x="0.198333" y="0.739606" />
+                                <point x="0" y="0.498906" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text20" sid="256300286278682">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text19" sid="344525374114805">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text21" sid="288443347891643">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Mute">
+            <object-type name="GameMute" sid="568266802762391">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-type name="Sprite" sid="955231823312372">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592456045219107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="424857264956302">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="255326502214823">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976307054267929" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="513727683455489">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569277625367441" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlueJump.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.203125" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.0625" y="0.9375" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="238889792626802">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510393859622886" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassLeft.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="709598961404476">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="204900774040762">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687137638062649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="787253135730210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975548918940124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="302629624770661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695113426195561" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\muddSkeleton1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="746131882355670">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945327731778312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="421289515519940">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404833754556648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="831457955319120">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground2" sid="531982425745035">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\summer-city-park-with-street-lights_1262-16617.jpg" />
+        </object-type>
+        <object-type name="9patch" sid="694434484136811">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Solid" sid="610538434732486">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Sprite20" sid="600866711384638">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814273001876017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassHalfLeft.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="708528519199992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309548864727226" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassLeft.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="955556908418897">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite12" sid="143656504008305">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920281400134560" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="358849526847644">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="485287719605353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="418601866457996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218098524590568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grassHalfCenter.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="909575443349120">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text11" sid="359082076811160">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite37" sid="797163739541557">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745502453465796" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="491381544330734">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite33" sid="282765897954049">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184959474208892" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite34" sid="871602414892650">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495517255239852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite40" sid="368263843534438">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752668667485897" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite44" sid="740474645759148">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479653896724204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\grass.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.953125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.046875" y="0.953125" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassCenter" sid="173949445165642">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="201522265005354">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488227462415342" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\karel\Desktop\CHARLIE SPRITS\grassCenter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite52" sid="997246015385819">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668408181831828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlue.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.140625" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.796875" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.328125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="873309150590217">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="229929615927599">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="350866526183816">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="732534685123312">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite53" sid="808391487235964">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970583612624025" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite54" sid="153490012515135">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="267168480571022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite55" sid="512463736285941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425465860405003" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBrown.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite56" sid="270919498681327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735404470005806" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogPink.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.859375" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="995864099720809">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite57" sid="567324854925368">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111555799864607" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\dogBlueBend.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite58" sid="147436519793733">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866363647631323" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite60" sid="100660336341426">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488797489769748" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite61" sid="616447828264684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363441897437961" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edwar\Desktop\Kuliah\Charlie&apos;s Spelling Adventure\doghouse.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.921875" y="0.5" />
+                            <point x="0.921875" y="0.921875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.109375" y="0.890625" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text15" sid="793612215068954">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text16" sid="624575974829605">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text17" sid="287605481579600">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text18" sid="882236087903757">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text22" sid="680439304933651">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite64" sid="198385997623095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573789930655233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.02407" />
+                            <point x="0.986667" y="0.498906" />
+                            <point x="0.791667" y="0.726477" />
+                            <point x="0.5" y="0.995624" />
+                            <point x="0.198333" y="0.739606" />
+                            <point x="0" y="0.498906" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text23" sid="821911426999662">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text24" sid="852788092591466">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text25" sid="789742434063209">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text26" sid="545873646636624">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text27" sid="103066567899553">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text28" sid="628247838547675">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text29" sid="182300852195538">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text30" sid="267798330529529">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text31" sid="352740428495628">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text32" sid="878227074420915">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text33" sid="842784038257549">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Next" sid="555805201909503">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590092583137491" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.02407" />
+                            <point x="0.986667" y="0.498906" />
+                            <point x="0.791667" y="0.726477" />
+                            <point x="0.5" y="0.995624" />
+                            <point x="0.198333" y="0.739606" />
+                            <point x="0" y="0.498906" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text34" sid="343408759788772">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text35" sid="612735787110302">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Return" sid="938650089367242">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778632877325262" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501094" original-source="C:\Users\edwar\Downloads\download.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.02407" />
+                            <point x="0.986667" y="0.498906" />
+                            <point x="0.791667" y="0.726477" />
+                            <point x="0.5" y="0.995624" />
+                            <point x="0.198333" y="0.739606" />
+                            <point x="0" y="0.498906" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite65" sid="458757167640033">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688967224144263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text36" sid="551105496016182">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text37" sid="624422244973117">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text38" sid="292639092359991">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="390269654716704">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Text39" sid="375121188611326">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text40" sid="527846221170614">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text41" sid="914705700846304">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MuteButton" sid="309850999440655">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite66" sid="106533381827875">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="222728473332300" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite67" sid="906770610657167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668772991725816" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Unmute" sid="719214283524451">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite68" sid="179225806298117">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881484971221517" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UnmuteHome" sid="282113262534463">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite69" sid="572875254375130">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660241852530417" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level4.xml</layout>
+        <layout>Home Screen.xml</layout>
+        <layout>AboutUs.xml</layout>
+        <layout>Credits.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Level4.xml</event-sheet>
+        <event-sheet>HomeScreen.xml</event-sheet>
+        <event-sheet>AboutUs.xml</event-sheet>
+        <event-sheet>Credits.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="18" />
+        <global-instance type="Mouse" uid="47" />
+        <global-instance type="Touch" uid="105">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="129">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="city_1.ogg" />
+        <file name="city_slow_1.ogg" />
+        <file name="dog_barking.ogg" />
+        <file name="fallen.ogg" />
+        <file name="level3_music.m4a" />
+        <file name="level3_music.ogg" />
+        <file name="shy_fixed.ogg" />
+        <file name="tutorial_music.m4a" />
+        <file name="tutorial_music.ogg" />
+        <file name="yay_fixed.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
